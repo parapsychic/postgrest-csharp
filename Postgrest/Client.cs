@@ -34,7 +34,8 @@ namespace Supabase.Postgrest
                     {
                         DateTimeStyles = options.DateTimeStyles,
                         DateTimeFormat = ClientOptions.DATE_TIME_FORMAT
-                    }
+                    },
+                    new StringEnumConverter()
                 }
             };
         }
